@@ -1,0 +1,99 @@
+.Navbar-main{
+    width: 100%;
+    padding: 0;
+}
+
+.Navbar {
+    background-color: #222831;
+    padding: 5px 10px;
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap; 
+}
+
+.urbanBazaar {
+    font-size: 2em;
+    font-family: 'Lemon';
+    font-weight: 900; 
+    color: #00ADB5;
+    padding-right: 10px;
+    text-shadow: 5px 2px 6px rgba(219, 213, 219, 0.5);
+    -webkit-text-stroke: 1px rgba(17, 14, 14, 0.856); 
+}
+.urbanBazaarBreak {
+    font-size: 1.5em;
+    font-family: 'Lemon';
+    font-weight: 800; 
+    color: #00ADB5;
+    text-shadow: 5px 2px 6px rgba(219, 213, 219, 0.5);
+    -webkit-text-stroke: 1px rgba(17, 14, 14, 0.856);  
+}
+
+#account-icon {
+    height: 2rem; 
+    width: 2rem; 
+    color: #EEEEEE;
+}
+.account{
+    display: flex;
+}
+.account p {
+    margin: 0; 
+    font-size: 1rem; 
+    padding: 5px;
+}
+
+.custom-dropdown-menu {
+    background: #d1d9daf6; 
+    min-width: 10rem;
+}
+#dropdown-icon {
+    display: flex; 
+    align-items: center; 
+    cursor: pointer;
+    color: #EEEEEE;
+}
+#cart-count {
+    background-color: rgb(97, 41, 230);
+    color: #fff;
+    border-radius: 50%; 
+    width: 18px; 
+    height: 18px;
+    text-align: center;
+    font-size: 12px;
+    color: #EEEEEE;
+}
+#cart-icon{
+    font-size: 2rem;
+    color: #EEEEEE;
+}
+.cart-icon-container{
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    padding-right: 30px;
+}
+
+.line {
+    width: 100%; 
+    height: 0.5px; 
+    background-color: #EEEEEE; 
+}
+.Navbar-1{
+    background-color: #393E46;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    width: 100%;
+    flex-wrap: wrap;
+}
+.Navbar-1 a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family:'Gill Sans';
+    color: #a6e3e9be;
+    font-weight: 600;
+}
