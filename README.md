@@ -1,5 +1,9 @@
 Urban Bazaar - An E-commerce website 
 
+Website Link : https://urban-bazaar-ashen.vercel.app/
+Backend maybe not be working as it's deployed on free-tier, Repo link : https://github.com/shashankp10/urbanbazaar-backend
+
+
 Tech stack used
     - React JS
     - Springboot
