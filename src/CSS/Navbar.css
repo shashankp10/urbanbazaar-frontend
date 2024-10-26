@@ -1,4 +1,4 @@
-.Navbar-main{
+.Navbar-main {
     width: 100%;
     padding: 0;
 }
@@ -7,28 +7,29 @@
     background-color: #f7f7f7d5;
     padding: 5px 10px;
     display: flex;
-    justify-content:center; 
+    justify-content: space-between;
     align-items: center;
-    gap: 2rem;
     width: 100%;
     flex-wrap: wrap; 
 }
 
 .urbanBazaar {
     font-size: 2em;
-    font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 900; 
     color: #1f5bca;
     text-shadow: 5px 2px 6px rgba(219, 213, 219, 0.5);
     -webkit-text-stroke: 1px rgba(17, 14, 14, 0.856); 
 }
-.urbanBazaarBreak {
-    font-size: 1.5em;
-    font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 800; 
-    color: #1f5bca;
-    text-shadow: 5px 2px 6px rgba(219, 213, 219, 0.5);
-    -webkit-text-stroke: 1px rgba(17, 14, 14, 0.856);  
+
+.icon-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon-group.medium-screen {
+    margin-left: auto;
 }
 
 #account-icon {
@@ -36,9 +37,12 @@
     width: 1.5rem; 
     color: #1a1515;
 }
-.account{
+
+.account {
     display: flex;
+    align-items: center;
 }
+
 .account p {
     margin: 0; 
     font-size: 1rem; 
@@ -50,6 +54,7 @@
     background: #d1d9daf6; 
     min-width: 10rem;
 }
+
 #dropdown-icon {
     display: flex; 
     align-items: center; 
@@ -57,7 +62,7 @@
     color: #0e0c0c;
 }
 
-#cart-count, #wishlist-count {
+#cart-count, #wishlist-count, #notification-count, .count {
     background-color: rgb(25, 45, 158);
     color: #fff;
     border-radius: 50%; 
@@ -65,38 +70,83 @@
     height: 1.5em;
     text-align: center;
     font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#cart-icon, #wishlist-icon{
+#cart-icon, #wishlist-icon {
     font-size: 2rem;
     color: #070606;
     height: 2rem;
     width: 1.5rem;
 }
-#wishlist-icon{
+
+#wishlist-icon {
     width: 1.8rem;
 }
-#notification-icon{
+
+#notification-icon {
     width: 1.9rem;
     height: 1.8rem;
 }
 
-.cart-icon-container,.wishlist-icon-container{
+.cart-icon-container, .wishlist-icon-container, .notification-icon-container {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     cursor: pointer;
 }
-.Navbar-1{
-    background-color: #393E46;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    flex-wrap: wrap;
+
+@media (max-width: 1200px) and (min-width: 950px) {
+    .urbanBazaar {
+        font-size: 1.7em; 
+        font-family: Georgia, 'Times New Roman', Times, serif; 
+        font-weight: 700; 
+        color: #174b9c; 
+        text-shadow: 4px 2px 5px rgba(200, 200, 210, 0.5); 
+    }
 }
-.Navbar-1 a{
-    text-decoration: none;
-    font-size: 1.2em;
-    font-family:'Gill Sans';
-    color: #a6e3e9be;
-    font-weight: 600;
+
+@media (max-width: 950px) {
+    .search-bar-container {
+        background-color: #f7f7f7d5;
+        padding-bottom: 0.5rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    .Navbar {
+        justify-content: space-between;
+    }
+
+    .menu-dropdown {
+        order: -1;
+    }
+
+    .urbanBazaar {
+        font-size: 1.7em;
+        margin: 0 auto;
+    }
+
+    .custom-dropdown {
+        order: 1;
+    }
+
+    .cart-icon-container {
+        order: 2;
+    }
+
+    #menu-dropdown {
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    #menu-dropdown::after {
+        display: none;
+    }
+
+    #dropdown-icon::after {
+        display: none;
+    }
 }

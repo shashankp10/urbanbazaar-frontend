@@ -15,10 +15,10 @@ function ControlledCarousel() {
   return (
     <Carousel activeIndex={index} onSelect={handleSelect} controls={true}>
       <Carousel.Item>
-        <img className="d-block w-100" src={imageUrl} style={{ height: '350px', width:'100%', marginBottom: '10px'}}/>
+        <img className="d-block w-100" src={imageUrl} style={{ height: '22rem', width:'100%', marginBottom: '10px'}}/>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100" src={imageUrl1} style={{ height: '350px', width:'100%', marginBottom: '10px'}}/>
+        <img className="d-block w-100" src={imageUrl1} style={{ height: '22rem', width:'100%', marginBottom: '10px'}}/>
       </Carousel.Item> 
       {/* <Carousel.Item>
         <img className="d-block w-100" src={imageUrl2} style={{ height: '250px', width:'100%', marginBottom: '10px'}}/>

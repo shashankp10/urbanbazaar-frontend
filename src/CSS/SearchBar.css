@@ -27,3 +27,10 @@ input:focus {
     color: royalblue;
     height: 2rem;
 }
+@media (max-width: 950px){
+    .input-wrapper {
+        width: 70%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
