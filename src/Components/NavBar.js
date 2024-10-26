@@ -25,10 +25,11 @@ export default function NavBar() {
         <div className='Navbar'>
             <h1 className={isWideScreen ? "urbanBazaarBreak" : "urbanBazaar"}>Urban{isWideScreen && <br />}Bazaar</h1>
             <SearchBar/>
+            <img id="notification-icon" src="https://img.icons8.com/material-outlined/50/appointment-reminders--v1.png" alt="appointment-reminders--v1"/>
             <Dropdown className="custom-dropdown">
                 <Dropdown.Toggle variant="transparent" id="dropdown-icon">
                     <div className='account'>
-                        <CgProfile  id="account-icon"/>
+                        <CgProfile id="account-icon"/>
                         <p>Shashank</p>
                     </div>
                 </Dropdown.Toggle>
@@ -41,9 +42,14 @@ export default function NavBar() {
             <div className="cart-icon-container">
                 <BsCart3 id="cart-icon"/>
                 {<span id="cart-count">{0}</span>}
+                
+            </div>
+            <div className="wishlist-icon-container">
+                <img id="wishlist-icon" src="https://img.icons8.com/windows/32/like--v1.png" alt="like--v1"/>
+                {<span id="wishlist-count">{0}</span>}
             </div>
         </div>
-        <div class="line"></div>
+        {/* <div class="line"></div>
         <div className='Navbar-1'>
             <a href="#fashion">Fashion</a>
             <a href="#electronics">Electronics</a>
@@ -51,7 +57,7 @@ export default function NavBar() {
             <a href="#grocery">Grocery</a>
             <a href="#furniture">Furniture</a>
             <a href="#beauty">Beauty</a>
-        </div>
+        </div> */}
     </div>
   )
 }

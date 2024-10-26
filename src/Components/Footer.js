@@ -6,14 +6,14 @@ export default function Footer() {
     <div className="Footer-Main">
       <div class="line"></div>
       <div class="footer-container">
-        <div class="footer-section">
+        {/* <div class="footer-section">
           <ul>
             <h6><a href="nearby_stores_url">Find nearby stores</a></h6>
             <h6><a href="special_discount_url">Special Discount</a></h6>
             <h6><a href="feedback_url">Feedback</a></h6>
             <h6><a href="partner_url">Become our partner</a></h6>
           </ul>
-        </div>
+        </div> */}
         <div class="footer-section">
           <ul>
             <h6>POLICY INFO</h6>
