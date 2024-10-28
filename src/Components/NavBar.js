@@ -7,8 +7,10 @@ import { BsCart3 } from "react-icons/bs";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineMenu } from "react-icons/hi";
 import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom"; 
 
 export default function NavBar() {
+    const navigate = useNavigate();
     const [isWideScreen, setIsWideScreen] = useState(true);
     const [isMediumScreen, setIsMediumScreen] = useState(false);
     const [isMobileView, setIsMobileView] = useState(false);
@@ -29,7 +31,13 @@ export default function NavBar() {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-
+    const handleHomeClick = () => {
+        navigate("/"); 
+    };
+    const handleLogout = () => {
+        localStorage.removeItem("token");
+        navigate("/login");
+    };
     return (
         <div className='Navbar-main'>
             <div className='Navbar'>
@@ -48,7 +56,7 @@ export default function NavBar() {
                         </Dropdown.Menu>
                     </Dropdown>
                 )}
-                <h1 className="urbanBazaar">
+                <h1 className="urbanBazaar" onClick={handleHomeClick} style={{ cursor: 'pointer' }}>
                     UrbanBazaar
                 </h1>
                 {isWideScreen && <SearchBar />}
@@ -60,7 +68,9 @@ export default function NavBar() {
                                 <span id="notification-count">0</span>
                             </div>
                             <div className="wishlist-icon-container">
-                                <img id="wishlist-icon" src="https://img.icons8.com/windows/32/like--v1.png" alt="wishlist"/>
+                                <Link to="/wishlist">
+                                    <img id="wishlist-icon" src="https://img.icons8.com/windows/32/like--v1.png" alt="wishlist"/>
+                                </Link>
                                 <span id="wishlist-count">0</span>
                             </div>
                         </>
@@ -76,12 +86,15 @@ export default function NavBar() {
                             {isMobileView && <Dropdown.Item>Hi, {userName}</Dropdown.Item>}
                             <Dropdown.Item href="#/action-1">Profile</Dropdown.Item>
                             <Dropdown.Item href="#/action-2">My Orders</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Sign Out</Dropdown.Item>
+                            <Dropdown.Item onClick={handleLogout}>Logout</Dropdown.Item>
+
                         </Dropdown.Menu>
                     </Dropdown>
                     <div className="cart-icon-container">
-                        <BsCart3 id="cart-icon"/>
-                        <span id="cart-count">0</span>
+                        <Link to="/cart">
+                            <BsCart3 id="cart-icon"/>
+                        </Link>
+                        <span id="cart-count">{localStorage.cartCount}</span>
                     </div>
                 </div>
             </div>

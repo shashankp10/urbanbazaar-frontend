@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.register-page {
+    display: flex;
+    height: 100vh;
+}
+
+.image-section, .register-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-section {
+    background-color: #f5f5f5; 
+}
+
+.logo {
+    max-width: 80%; /* Adjust logo size as needed */
+    height: auto;
+}
+
+.register-container {
+    padding: 20px;
+    flex-direction: column;
+}
+
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    margin-left: auto;
+    padding: 12px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #006400; 
+    box-shadow: 0px 0px 5px rgba(0, 100, 0, 0.2);
+}
+.urbanBazaar {
+    font-size: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900; 
+    color: #1f5bca;
+    text-shadow: 5px 2px 6px rgba(219, 213, 219, 0.5);
+    -webkit-text-stroke: 1px rgba(17, 14, 14, 0.856); 
+}
+.image-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100%; /* Full height for centering within its container */
+    width: 100%; /* Full width if it’s a half-page section */
+    background-color: #f5f5f5; /* Optional background color */
+}
+.logo {
+    width: 100px; 
+    height: auto; 
+}
+.password-group {
+    margin: 1rem 0; /* Add margin for spacing */
+}
+
+.password-container {
+    position: relative; /* Necessary for absolute positioning of the icon */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.password-container input {
+    width: 100%; /* Full width input */
+    padding-right: 40px; /* Space for the icon */
+    border: 1px solid #ddd; /* Border styling */
+    border-radius: 5px; /* Rounded corners */
+    height: 40px; /* Input height */
+    font-size: 12px; /* Font size */
+}
+
+.password-toggle-icon {
+    position: absolute;
+    right: 10px; 
+    cursor: pointer;
+    color: #666; 
+    font-size: 1.2em;
+}
+
+.password-strength {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #666;
+}
+.form-group.terms {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.form-group.terms input[type="checkbox"] {
+    margin-right: 8px;
+    width: auto;
+}
+
+button[type="submit"] {
+    padding: 0.5;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #006400; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #004d00; 
+}
+
+p.toggle {
+    font-size: 14px;
+    color: #006400;
+    cursor: pointer;
+    text-align: center;
+}
+
+p.toggle:hover {
+    text-decoration: underline;
+}
+
+.form-group.terms a {
+    color: #006400;
+    text-decoration: none;
+}
+
+.form-group.terms a:hover {
+    text-decoration: underline;
+}
+
+
+
+

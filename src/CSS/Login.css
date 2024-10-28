@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-page {
+    display: flex;
+    height: 100vh;
+}
+
+.image-section {
+    flex: 1;
+    background-color: #f7f7f7; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-width: 80%; 
+    height: auto;
+}
+.password-group {
+    margin: 1rem 0; /* Add margin for spacing */
+}
+
+.password-container {
+    position: relative; /* Necessary for absolute positioning of the icon */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.password-container input {
+    width: 100%; /* Full width input */
+    padding-right: 40px; /* Space for the icon */
+    border: 1px solid #ddd; /* Border styling */
+    border-radius: 5px; /* Rounded corners */
+    height: 40px; /* Input height */
+    font-size: 12px; /* Font size */
+}
+
+.password-toggle-icon {
+    position: absolute; /* Absolute positioning for the icon */
+    right: 10px; /* 10px from the right */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #666; /* Color of the icon */
+    font-size: 1.2em; /* Size of the icon */
+}
+
+.forget-password{
+    font-size: 12px;
+    color: #006400;
+    cursor: pointer;
+    text-align: right;
+    margin-top: 0.5rem;
+}
+
+.form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the form */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.toggle {
+    margin-top: 15px;
+    color: #007bff; /* Link color */
+    cursor: pointer;
+}
+
+.toggle:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-login h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2b2222;
+}
+
+.social-login {
+    padding: 1rem;
+}
+
+.social-icons img {
+    width: 1.7rem;
+    height: 1.7rem;
+    cursor: pointer; /* Pointer cursor for clickable icons */
+}
+
+.meta-icon {
+    opacity: 0.5; /* Make the Meta icon look disabled */
+    cursor: not-allowed; /* Change cursor to indicate it cannot be clicked */
+    pointer-events: none; /* Disable all mouse events */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Only for the Google icon */
+}
+
+.line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    max-width: 20rem;
+}
+
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #b9b7b7;
+    margin: 0 0.5rem;
+}
+
+
+.line-container p {
+    margin: 0;
+    font-size: 16px;
+    color: #2b2a2a; 
+    white-space: nowrap; 
+}
