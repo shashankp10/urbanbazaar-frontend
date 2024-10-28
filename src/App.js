@@ -9,7 +9,7 @@ import Wishlist from './Components/Wishlist';
 import { useState } from 'react';
 
 function App() {
-  const [isLogin, setIsLogin] = useState(false);
+  const [isLogin, setIsLogin] = useState(true);
   return (
     <Router>
       <div className='main-class'>
